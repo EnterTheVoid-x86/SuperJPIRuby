@@ -1,0 +1,6 @@
+run = ["ruby", "app.rb"]
+
+entrypoint = "app.rb"
+
+[packager]
+language = "ruby"
