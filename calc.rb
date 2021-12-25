@@ -6,20 +6,7 @@ def calc
   while true
     print ">> "
     str = gets.chomp.split(" ")  # splits into array, rejects blanks
-    if str[0] == 'exit'  
-      system ("clear")
-      load "hub.rb"
-    else
-      if str[0] == 'quit'
-        system ("clear")
-        load "hub.rb"
-      else
-    if str[0] == 'q'
-      system ("clear")
-      load "hub.rb"
-    end
-  end
-end
+    return if str[0] == "q"
     
 
     operand1 = str[0].to_i

@@ -9,6 +9,12 @@ if choice == "1"
   load "hub.rb"
 else
   if choice == "2"
+    system ("tput cnorm")
+    system ("ruby calc.rb")
+  else 
+    puts "Sorry, that wasn't an option. Please try again."
+    sleep 1 
     system ("clear")
-    load "calc.rb"
-load "hub.rb"
+    load "Menu.rb"
+  end
+end
